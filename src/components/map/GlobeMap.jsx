@@ -252,8 +252,8 @@ const GlobeMap = ({ className = "" }) => {
         className="w-full h-full"
       />
       <div className="absolute top-4 left-4 pointer-events-none">
-        <h3 className="font-display text-2xl font-bold text-[var(--color-ink)]">Global Network</h3>
-        <p className="font-body text-sm text-[var(--color-muted)]">3D Orthographic Projection</p>
+        <h3 className="font-display text-2xl font-bold text-[var(--color-ink)]">Sunshine hours per day</h3>
+        {/* <p className="font-body text-sm text-[var(--color-muted)]">3D Orthographic Projection</p> */}
       </div>
     </div>
   );

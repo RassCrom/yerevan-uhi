@@ -6,11 +6,11 @@ import { Howl } from 'howler';
 gsap.registerPlugin(ScrollTrigger);
 
 const HEAT_DATA = [
-  { year: 1990, temp: 25.0, imageId: '/public/lst_1990.png' },
-  { year: 2000, temp: 28.0, imageId: '/public/lst_2000.png' },
-  { year: 2010, temp: 31.0, imageId: '/public/lst_2010.png' },
-  { year: 2020, temp: 34.0, imageId: '/public/lst_2020.png' },
-  { year: 2025, temp: 35.8, imageId: '/public/lst_2025.png' },
+  { year: 1990, temp: 25.0, imageId: '/lst_1990.png' },
+  { year: 2000, temp: 28.0, imageId: '/lst_2000.png' },
+  { year: 2010, temp: 31.0, imageId: '/lst_2010.png' },
+  { year: 2020, temp: 34.0, imageId: '/lst_2020.png' },
+  { year: 2025, temp: 35.8, imageId: '/lst_2025.png' },
 ];
 
 const Prologue = () => {
@@ -27,11 +27,14 @@ const Prologue = () => {
       setCurrentIdx((prev) => {
         const next = (prev + 1) % HEAT_DATA.length;
         // Update sound volume based on temperature
+        // (Audio disabled by request)
+        /*
         if (soundRef.current && activeSound.current) {
           // Map index [0..4] to volume [0.2..1.0]
           const volume = 0.2 + (next / (HEAT_DATA.length - 1)) * 0.8;
           soundRef.current.volume(volume);
         }
+        */
         return next;
       });
     }, 2000); // 2 seconds per slide
@@ -58,10 +61,13 @@ const Prologue = () => {
     });
 
     const enableAudio = () => {
+      // Audio playback disabled
+      /*
       if (!activeSound.current) {
         soundRef.current.play();
         activeSound.current = true;
       }
+      */
       window.removeEventListener('scroll', enableAudio);
       window.removeEventListener('click', enableAudio);
     };

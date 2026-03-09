@@ -38,9 +38,12 @@ const Chapter3 = () => {
           setActiveStep(currentStep);
 
           // Audio fade in as progress approaches end
+          // (Audio disabled by request)
+          /*
           if (soundRef.current) {
              soundRef.current.volume(self.progress * 0.5);
           }
+          */
         }
       }
     });

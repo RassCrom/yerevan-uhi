@@ -21,10 +21,9 @@ const Header = () => {
 
   // Theme State
   const [theme, setTheme] = useState(() => {
+    // Light mode is the default and main theme by request
     if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme) return savedTheme;
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+      localStorage.setItem('theme', 'light');
     }
     return 'light';
   });
@@ -175,7 +174,8 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Theme Toggle */}
+        {/* Theme Toggle (Hidden as Light Mode is main) */}
+        {/*
         <button
           onClick={toggleTheme}
           className={`group w-10 h-10 md:w-12 md:h-12 backdrop-blur-md rounded-full flex items-center justify-center focus:outline-none cursor-pointer shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 ${
@@ -191,6 +191,7 @@ const Header = () => {
              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
           )}
         </button>
+        */}
 
         {/* Floating Toggle Button (Burger) */}
         <button
