@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #F0F0EC;
+  --color-surface: #FAFAF8;
+  --color-ink: #1A1A2E;
+  --color-coral: #E85D40;
+  --color-teal: #2D8B7A;
+  --color-muted: #4A4A68;
+  --color-gold: #D4A853;
+  --color-border: rgba(26, 26, 46, 0.08);
+
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-body: 'Passenger Sans', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --section-gap: clamp(4rem, 10vw, 8rem);
+  --content-max: 72rem;
+  --content-narrow: 48rem;
+  --radius: 0.625rem;
+}
+
+.dark {
+    --color-bg: #0D0D14;
+    --color-surface: #1A1A2E;
+    --color-ink: #E8E8E8;
+    --color-coral: #FF6B4D;
+    --color-teal: #3DAA96;
+    --color-muted: #A0A0B0;
+    --color-gold: #E8B84A;
+    --color-border: rgba(177, 177, 243, 0.08);
+}
+
+/* ── Reset & Globals ─────────────────────────────── */
+@layer base {
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 1rem;  /* 16 px */
+    line-height: 1.5;
+    overflow-x: hidden;
+    background-color: var(--color-bg);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--color-ink);
+  }
+
+  a {
+    color: var(--color-teal);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  ::selection {
+    background-color: rgba(232, 93, 64, 0.15);
+    color: var(--color-ink);
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(26, 26, 46, 0.15);
+    border-radius: 3px;
+  }
+
+  li {
+    list-style: none;
+    text-transform: uppercase;
+  }
+}
+
+@layer utilities {
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.5s ease-out forwards;
+  }
+}

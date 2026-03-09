@@ -1,0 +1,15 @@
+{
+    "cities": [
+        { "name": "Yerevan", "lng": 44.5152, "lat": 40.1872, "sunshine_hours_daily_annum": 7.5 },
+        { "name": "New York", "lng": -74.006, "lat": 40.7128, "sunshine_hours_daily_annum": 6.6 },
+        { "name": "London", "lng": -0.1276, "lat": 51.5074, "sunshine_hours_daily_annum": 4.5 },
+        { "name": "Tokyo", "lng": 139.6917, "lat": 35.6895, "sunshine_hours_daily_annum": 5.2 },
+        { "name": "Paris", "lng": 2.3522, "lat": 48.8566, "sunshine_hours_daily_annum": 4.7 },
+        { "name": "Sydney", "lng": 151.2093, "lat": -33.8688, "sunshine_hours_daily_annum": 7.2 },
+        { "name": "Dubai", "lng": 55.2708, "lat": 25.2048, "sunshine_hours_daily_annum": 8.2 },
+        { "name": "Singapore", "lng": 103.8198, "lat": 1.3521, "sunshine_hours_daily_annum": 5.0 },
+        { "name": "Rio de Janeiro", "lng": -43.1729, "lat": -22.9068, "sunshine_hours_daily_annum": 6.3 },
+        { "name": "Cape Town", "lng": 18.4232, "lat": -33.9249, "sunshine_hours_daily_annum": 8.0 },
+        { "name": "Mumbai", "lng": 72.8777, "lat": 19.0760, "sunshine_hours_daily_annum": 7.1 }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+  "header": {
+    "directory": "Directory",
+    "prologue": "Prologue",
+    "prologue_sub": "The concrete valley",
+    "chapter1": "Chapter 1",
+    "chapter1_sub": "Rising temperatures",
+    "chapter2": "Chapter 2",
+    "chapter2_sub": "The urban canyon effect",
+    "chapter3": "Chapter 3",
+    "chapter3_sub": "Vulnerable communities",
+    "chapter4": "Chapter 4",
+    "chapter4_sub": "Cooling strategies",
+    "chapter5": "Chapter 5",
+    "chapter5_sub": "A greener future",
+    "epilogue": "Epilogue",
+    "epilogue_sub": "Return to balance",
+    "title_part1": "Yerevan's",
+    "title_part2": "Heat",
+    "title_part3": "Island",
+    "story_desc": "Urban planning, climate change, and the invisible boundary that traps scorching temperatures within the ancient city's concrete valleys.",
+    "summer_avg": "Summer Avg. Disparity",
+    "status": "Status",
+    "critical": "CRITICAL"
+  }
+}
